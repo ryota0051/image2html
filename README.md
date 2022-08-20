@@ -1,5 +1,17 @@
 ## 環境構築
 
+0. 学習済みモデルである`notebook/checkpoint/epoch_600.zip`を解凍しておく(**解凍ディレクトリ配下が以下の構成になっていることを確認しておくこと => windows でよく遭遇するデータ本体に 1 階層挟まれた状態で無いことを確認しておくという意味**)
+
+   ```
+   ./
+   |-assets
+   |-keras_metadata.pb
+   |-saved_model.pb
+   |_variables
+       |-variables.data-xxxx
+       |_variable.index
+   ```
+
 1. 以下のコマンドで docker コンテナを作成
 
    - gpu が無い場合
